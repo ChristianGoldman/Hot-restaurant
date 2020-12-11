@@ -20,7 +20,7 @@ app.listen(PORT, function() {
   }); 
 
   app.get("/", function(req, res) {
-    res.send("Welcome to HOT RESTAURANT");
+    res.sendFile(path.join(__dirname, "html/home.html"));
   });
 
   app.get("/api/tables", function(req, res) {
@@ -29,4 +29,16 @@ app.listen(PORT, function() {
 
   app.get("/api/waitlist", function(req, res) {
     res.send(waitList);
+  });
+
+  app.get("/api/waitlist", function(req, res) {
+    res.send(waitList);
+  });
+
+  app.get("/tables", function(req, res) {
+    res.sendFile(path.join(__dirname, "html/tables.html"));
+  });
+
+  app.get("/reserve", function(req, res) {
+    res.sendFile(path.join(__dirname, "html/reserve.html"));
   });

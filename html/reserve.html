@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1><i class="fas fa-dumpster-fire"></i>Hot Restaurants</h1>
+    <hr />
+    <p>Make your reservation</p>
+    <a class="waves-effect waves-light btn-large">View tables</a>
+    <a class="waves-effect waves-light btn-large">Home</a>
+
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input
+              placeholder="First Name"
+              id="first_name"
+              type="text"
+              class="validate"
+            />
+            <label for="first_name"></label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password" type="password" class="validate" placeholder="Phone Number" />
+            <label for="password"></label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password" type="password" class="validate" placeholder="Unique Id" />
+            <label for="password"></label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate" placeholder="Email" />
+            <label for="email"></label>
+          </div>
+        </div>
+        <a class="waves-effect waves-light btn">Submit</a>
+        <hr >
+        <a href="/api/tables">API Tables</a> |
+        <a href="/api/tables">API Wait List</a>
+      </form>
+    </div>
+  </body>
+</html>
